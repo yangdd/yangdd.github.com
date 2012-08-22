@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>my first blog - 长老的 Octopress Blog</title>
+  <title>my first blog with Octopress - 长老的 Octopress Blog</title>
   <meta name="author" content="长老">
 
   
-  <meta name="description" content="
-">
+  <meta name="description" content="打算开博了，本来准备用新浪，结果发现这个章鱼哥，结合Git,Markdown和Ruby,很有意思，于是花了几个小时折腾，第一遍文章也就变成建站经过了。 我用的是mac 10.8 mountain lion 1. mac自带的ruby是1.8，Octopress需要1.9以上，先装RVM, &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -69,7 +68,7 @@
   
   <header>
     
-      <h1 class="entry-title">My First Blog</h1>
+      <h1 class="entry-title">My First Blog With Octopress</h1>
     
     
       <p class="meta">
@@ -92,7 +91,51 @@
   </header>
 
 
-<div class="entry-content">
+<div class="entry-content"><p>打算开博了，本来准备用新浪，结果发现这个章鱼哥，结合Git,Markdown和Ruby,很有意思，于是花了几个小时折腾，第一遍文章也就变成建站经过了。</p>
+
+<p>我用的是mac 10.8 mountain lion</p>
+
+<h2>1. mac自带的ruby是1.8，Octopress需要1.9以上，先装RVM,mac上有<a href="http://unfiniti.com/software/mac/jewelrybox">Jewelrybox</a>，</h2>
+
+<pre><code>1.1 发觉又需要gcc编译ruby，而xcode 4.2后没有gcc了，只好去装&lt;a href="https://github.com/kennethreitz/osx-gcc-installer"&gt;osx-gcc-installer&lt;/a&gt;先
+1.2 ruby 1.9.3 装上，可是Gemsets显示bundler 1.1.5有错，只好手动安装：gem install bundler （之前要切换ruby版本：rvm --default user 1.9.3，然后ruby -v核实）
+</code></pre>
+
+<h2>2.配置github账号</h2>
+
+<pre><code>2.1 登陆&lt;a href="https://github.com/signup/free"&gt;github&lt;/a&gt;，创建个人账号yangdd
+2.2 ssh-kengen -t rsa 生成密钥，添加至https://github.com/account/ssh
+</code></pre>
+
+<h2>3. 配置Octopress</h2>
+
+<pre><code>3.1 git clone git://github.com/imathis/octopress.git yangdd.github.com 
+3.2 安装相应的gem: bundle update
+3.3 rake install 生成模版
+3.4 创建一个项目yangdd.github.com然后用git remote add添加
+3.5 加文章 rake new_post["title"]
+3.6 生成html: rake generate （预览：rake preview, 本机访问localhost:4000）
+3.7 配置octopress-github连接 rake setup_github_pages
+3.8 发布 rake deploy
+3.9 更新 git push -u yangdd master
+</code></pre>
+
+<h2>4. 浏览 <a href="yangdd.github.com">http://yangdd.github.com</a></h2>
+
+<pre><code>4.1 修改 _config.yml, header.html, footer.html etc定制化
+4.2 如果中文乱码在.bash_profile加入
+export   LC_ALL=zh_CN.UTF-8 
+export LANG=zh_CN.UTF-8
+</code></pre>
+
+<h2>5. http://octopress.org/docs/setup/ 有详细介绍</h2>
+
+<h2>6. todo:</h2>
+
+<pre><code>6.1 学习markdown语法
+6.2 参考http://warwithinme.com/blog/2012/02/blogging-with-octopress/简化流程
+6.3 如何去掉底部的tweet链接？
+</code></pre>
 </div>
 
 
@@ -146,7 +189,7 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2012/08/22/my-first-blog/">my first blog</a>
+        <a href="/blog/2012/08/22/my-first-blog/">my first blog with Octopress</a>
       </li>
     
   </ul>
