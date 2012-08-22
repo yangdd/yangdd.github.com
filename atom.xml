@@ -4,7 +4,7 @@
   <title><![CDATA[长老的 Octopress Blog]]></title>
   <link href="http://yangdd.github.com/atom.xml" rel="self"/>
   <link href="http://yangdd.github.com/"/>
-  <updated>2012-08-22T13:57:59+08:00</updated>
+  <updated>2012-08-22T14:51:44+08:00</updated>
   <id>http://yangdd.github.com/</id>
   <author>
     <name><![CDATA[长老]]></name>
@@ -12,6 +12,24 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[sick last week]]></title>
+    <link href="http://yangdd.github.com/blog/2012/08/22/sick-slash-last-slash-week/"/>
+    <updated>2012-08-22T14:39:00+08:00</updated>
+    <id>http://yangdd.github.com/blog/2012/08/22/sick-slash-last-slash-week</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[sick last week]]></title>
+    <link href="http://yangdd.github.com/blog/2012/08/22/sick-last-week/"/>
+    <updated>2012-08-22T14:38:00+08:00</updated>
+    <id>http://yangdd.github.com/blog/2012/08/22/sick-last-week</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[my first blog with Octopress]]></title>
@@ -25,7 +43,7 @@
 <h2>1. mac自带的ruby是1.8，Octopress需要1.9以上，先装RVM,mac上有<a href="http://unfiniti.com/software/mac/jewelrybox">Jewelrybox</a>，</h2>
 
 <pre><code>1.1 发觉又需要gcc编译ruby，而xcode 4.2后没有gcc了，只好去装&lt;a href="https://github.com/kennethreitz/osx-gcc-installer"&gt;osx-gcc-installer&lt;/a&gt;先
-1.2 ruby 1.9.3 装上，可是Gemsets显示bundler 1.1.5有错，只好手动安装：gem install bundler （之前要切换ruby版本：rvm --default user 1.9.3，然后ruby -v核实）
+1.2 ruby 1.9.3 装上，可是Gemsets显示bundler 1.1.5有错，只好手动安装：gem install bundler （之前要切换ruby版本：rvm --default user 1.9.3，然后ruby -v核实，其实应该用Jewelrybox去设置）
 </code></pre>
 
 <h2>2.配置github账号</h2>
