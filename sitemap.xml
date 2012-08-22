@@ -2,22 +2,26 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://yangdd.github.com/blog/2012/08/22/my-first-blog/</loc>
-        <lastmod>2012-08-22T15:20:29+08:00</lastmod>
+        <lastmod>2012-08-22T19:18:43+08:00</lastmod>
     </url>
     <url>
         <loc>http://yangdd.github.com/blog/2012/08/22/sick-last-week/</loc>
-        <lastmod>2012-08-22T14:54:07+08:00</lastmod>
+        <lastmod>2012-08-22T19:18:37+08:00</lastmod>
     </url>
     <url>
         <loc>http://yangdd.github.com/blog/2012/08/22/ru-he-gong-zuo/</loc>
-        <lastmod>2012-08-22T15:10:05+08:00</lastmod>
+        <lastmod>2012-08-22T19:18:40+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://yangdd.github.com/404.html</loc>
+        <lastmod>2012-08-22T19:10:46+08:00</lastmod>
     </url>
     <url>
         <loc>http://yangdd.github.com/blog/archives/</loc>
-        <lastmod>2012-08-22T15:20:29+08:00</lastmod>
+        <lastmod>2012-08-22T19:18:43+08:00</lastmod>
     </url>
     <url>
         <loc>http://yangdd.github.com/</loc>
-        <lastmod>2012-08-22T15:20:29+08:00</lastmod>
+        <lastmod>2012-08-22T19:18:43+08:00</lastmod>
     </url>
 </urlset>

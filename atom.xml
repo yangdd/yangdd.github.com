@@ -4,7 +4,7 @@
   <title><![CDATA[长老的 Octopress Blog]]></title>
   <link href="http://yangdd.github.com/atom.xml" rel="self"/>
   <link href="http://yangdd.github.com/"/>
-  <updated>2012-08-22T15:21:15+08:00</updated>
+  <updated>2012-08-22T19:19:24+08:00</updated>
   <id>http://yangdd.github.com/</id>
   <author>
     <name><![CDATA[长老]]></name>
@@ -28,6 +28,9 @@
 <h2>为什么时间总是不够？</h2>
 
 <p>是因为没有安排好自己的时间，还是应承了超过个人能力的事情？或者是自我表现想当英雄？</p>
+
+<!-- more -->
+
 
 <h2>“不要逞英雄”</h2>
 
@@ -54,6 +57,9 @@
 4.情志不遂
 5.药物滥用
 这样说，我这次就属于正气不足了。</p>
+
+<!-- more -->
+
 
 <p>本人从小相对瘦弱，先天体质可能就一般，中学时父亲给我找了付石锁，比较早的开始锻炼，个人也喜欢各种体育活动，运动算是比较多的。大学后开始接触健美，十几年下来肌肉，体型啥的练得还是不错的。当然，后来发现光是西式锻炼，“外练筋骨皮”，是不够的，这是后话（下次谈早起的话题再细说）。</p>
 
@@ -84,6 +90,11 @@
 <pre><code>1.1 发觉又需要gcc编译ruby，而xcode 4.2后没有gcc了，只好去装&lt;a href="https://github.com/kennethreitz/osx-gcc-installer"&gt;osx-gcc-installer&lt;/a&gt;先
 1.2 ruby 1.9.3 装上，可是Gemsets显示bundler 1.1.5有错，只好手动安装：gem install bundler （之前要切换ruby版本：rvm --default user 1.9.3，然后ruby -v核实，其实应该用Jewelrybox去设置）
 </code></pre>
+
+<!-- more -->
+
+
+<p></p>
 
 <h2>2.配置github账号</h2>
 
