@@ -4,7 +4,7 @@
   <title><![CDATA[长老的 Octopress Blog]]></title>
   <link href="http://yangdd.github.com/atom.xml" rel="self"/>
   <link href="http://yangdd.github.com/"/>
-  <updated>2012-08-22T14:58:55+08:00</updated>
+  <updated>2012-08-22T15:11:29+08:00</updated>
   <id>http://yangdd.github.com/</id>
   <author>
     <name><![CDATA[长老]]></name>
@@ -12,6 +12,33 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[如何工作]]></title>
+    <link href="http://yangdd.github.com/blog/2012/08/22/ru-he-gong-zuo/"/>
+    <updated>2012-08-22T15:06:00+08:00</updated>
+    <id>http://yangdd.github.com/blog/2012/08/22/ru-he-gong-zuo</id>
+    <content type="html"><![CDATA[<p>生病休息期间重读了《重来》，有一句话很有触动：
+我们一直要求用更少的资源去做更多的事情，《Rework》展示了如何做更少的事情，却创造更多的价值。</p>
+
+<h2>时间管理：</h2>
+
+<p>做更多，更快，更高效。我有时会进入更匆忙的误区，一个例子就是（写字）。小学时我的字属于鬼画符型，高中专门练了练，也得过硬笔书法的小奖，到现在很少写字（主要是填表），总想赶时间写快，结果就惨不忍睹了。</p>
+
+<h2>为什么时间总是不够？</h2>
+
+<p>是因为没有安排好自己的时间，还是应承了超过个人能力的事情？或者是自我表现想当英雄？</p>
+
+<h2>“不要逞英雄”</h2>
+
+<p>很多时候，知难而退比逞英雄实在。‘要谨记：最明显的解决方案有可能就是适时退出。人们容易自然而然地把放弃和失败联系起来，但有时你就该这么做。如果你已经在不值得做的事情上浪费了很多时间，那就赶快走开。失去的时间是再也找不回来了。现在最糟糕的事莫过于继续浪费时间。</p>
+
+<h2>如何应用到工作上？</h2>
+
+<p>“对任何耗时超过两周的工作，我们都要让其他人来帮忙看一看”
+要提醒同事们如果case超过两三周，就应该ask for help!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[重病一场]]></title>
