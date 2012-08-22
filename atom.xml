@@ -4,7 +4,7 @@
   <title><![CDATA[长老的 Octopress Blog]]></title>
   <link href="http://yangdd.github.com/atom.xml" rel="self"/>
   <link href="http://yangdd.github.com/"/>
-  <updated>2012-08-22T15:11:29+08:00</updated>
+  <updated>2012-08-22T15:21:15+08:00</updated>
   <id>http://yangdd.github.com/</id>
   <author>
     <name><![CDATA[长老]]></name>
@@ -122,6 +122,7 @@ export LANG=zh_CN.UTF-8
 <pre><code>6.1 学习markdown语法
 6.2 参考http://warwithinme.com/blog/2012/02/blogging-with-octopress/简化流程
 6.3 如何去掉底部的tweet链接？
+6.4 似乎没有评论功能？
 </code></pre>
 ]]></content>
   </entry>
