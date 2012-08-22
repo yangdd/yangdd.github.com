@@ -4,7 +4,7 @@
   <title><![CDATA[长老的 Octopress Blog]]></title>
   <link href="http://yangdd.github.com/atom.xml" rel="self"/>
   <link href="http://yangdd.github.com/"/>
-  <updated>2012-08-22T13:20:17+08:00</updated>
+  <updated>2012-08-22T13:57:59+08:00</updated>
   <id>http://yangdd.github.com/</id>
   <author>
     <name><![CDATA[长老]]></name>
@@ -56,6 +56,9 @@ export LANG=zh_CN.UTF-8
 </code></pre>
 
 <h2>5. http://octopress.org/docs/setup/ 有详细介绍</h2>
+
+<pre><code>5.1 http://mrzhang.me/blog/blog-equals-github-plus-octopress.html 也不错
+</code></pre>
 
 <h2>6. todo:</h2>
 
