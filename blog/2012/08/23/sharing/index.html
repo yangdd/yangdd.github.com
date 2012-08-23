@@ -5,17 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>重病一场 - 长老的 Octopress Blog</title>
+  <title>修改分享功能 - 长老的 Octopress Blog</title>
   <meta name="author" content="长老">
 
   
-  <meta name="description" content="上周意想不到的大病一场，病中反思了原因，也制定了避免一个重蹈覆辙的计划。 其实天气没有大的变化，生病主要还是内因。有一种“病有五因”的说法：
-1.人体内正气不足，致使邪气有机可乘
-2.饮食不规律
-3.缺乏运动
-4.情志不遂
-5.药物滥用
-这样说，我这次就属于正气不足了。 本人从小相对瘦弱， &hellip;">
+  <meta name="description" content="运行find . |xargs grep Tweet 2&gt;/dev/null
+（列出所有文件【含子目录】做全文搜索，2>/dev/null是重定向错误，因为有些目录没有访问权限） ./.themes/classic/source/_includes/asides/twitter.html &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -24,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://yangdd.github.com/blog/2012/08/22/sick-last-week/">
+  <link rel="canonical" href="http://yangdd.github.com/blog/2012/08/23/sharing/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -74,7 +69,7 @@
   
   <header>
     
-      <h1 class="entry-title">重病一场</h1>
+      <h1 class="entry-title">修改分享功能</h1>
     
     
       <p class="meta">
@@ -90,38 +85,47 @@
   
 
 
-<time datetime="2012-08-22T14:38:00+08:00" pubdate data-updated="true">Aug 22<span>nd</span>, 2012</time>
+<time datetime="2012-08-23T07:51:00+08:00" pubdate data-updated="true">Aug 23<span>rd</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>上周意想不到的大病一场，病中反思了原因，也制定了避免一个重蹈覆辙的计划。</p>
+<div class="entry-content"><p>运行<code>find . |xargs grep Tweet 2&gt;/dev/null</code>
+（列出所有文件【含子目录】做全文搜索，2>/dev/null是重定向错误，因为有些目录没有访问权限）</p>
 
-<p>其实天气没有大的变化，生病主要还是内因。有一种“病有五因”的说法：
-1.人体内正气不足，致使邪气有机可乘
-2.饮食不规律
-3.缺乏运动
-4.情志不遂
-5.药物滥用
-这样说，我这次就属于正气不足了。</p>
+<pre><code>./.themes/classic/source/_includes/asides/twitter.html:  &lt;h1&gt;Latest Tweets&lt;/h1&gt;
+./.themes/classic/source/_includes/post/sharing.html:  &lt;a href="http://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-via="{{ site.twitter_user }}" data-counturl="{{ site.url }}{{ page.url }}" &gt;Tweet&lt;/a&gt;
+./.themes/classic/source/javascripts/twitter.js:function linkifyTweet(text, url) {
+</code></pre>
 
 <!-- more -->
 
 
-<p>本人从小相对瘦弱，先天体质可能就一般，中学时父亲给我找了付石锁，比较早的开始锻炼，个人也喜欢各种体育活动，运动算是比较多的。大学后开始接触健美，十几年下来肌肉，体型啥的练得还是不错的。当然，后来发现光是西式锻炼，“外练筋骨皮”，是不够的，这是后话（下次谈早起的话题再细说）。</p>
+<p>查看<code>sharing.html</code>找到</p>
 
-<p>回来说上周一的病，回想起来，最近其实身体颇为疲劳（从眼白看不够黑白分明【附：可以看看孩子的眼睛就知道什么是好的】，有时有血丝，如果午觉后看则没问题，可知睡眠休息不足），惜乎没有重视，周四健身+羽毛球，周五游泳，周六健身，周日正午踢了两小时球（关键周六晚由于蚊子兴风作浪，一直也没睡好），到周日夜里就有点发冷，周一起床还行，到了办公室，自己发了点汗，可能有吹了空调，中午就不行了。下午发烧呕吐，晚上只好去医院，又不想输液开了药就回家（查血是病毒+细菌感染），夜里把药也吐了，第二天到39.5度，最终还是输液消炎3天才好。倒是把睡眠补足了。</p>
+<pre><code>  {% if site.twitter_tweet_button %}
+&lt;a href="http://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-via="{{ site.twitter_user }}" data-counturl="{{ site.url }}{{ page.url }}" &gt;Tweet&lt;/a&gt;
+</code></pre>
 
-<p>经过反思，一个要注意劳逸结合，锻炼不要过量（还有就是恢复跑步训练，原来为了省时间健身直接就是铁疙瘩，需要加强心肺练习），第二点是摸索一个午休的办法，如果有半小时最好，小睡片刻，如果只有10-15分钟，需要实验一下以下方案，看看哪个更好：
-1. 闭目养神
-2. 闭目养神+音乐
-3. 做一遍八段锦
-4. 倒立，轻微活动
-5. 散步</p>
+<p>修改<code>_config.yml</code></p>
 
-<p>第三电脑上设了个定时器，每小时报时，提醒我休息一下（学习@百望山伯爵的），感觉每天看电脑太多，费眼费神。</p>
+<pre><code>twitter_tweet_button 为 false
+</code></pre>
+
+<p>搞定！</p>
+
+<p>下面加一个分享到新浪微博的链接（从网上找了个weibo icon放在<code>source/images</code>目录）：
+还是<code>share.html</code>，增加：</p>
+
+<pre><code>  &lt;a href="javascript:(function(){window.open('http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent(document.title)+'&amp;amp;url='+encodeURIComponent(location.href)+'&amp;amp;source=bookmark','_blank','width=250,height=200');})()" title="分享到新浪微博"&gt;&lt;img src="/images/sina_weibo.gif"&gt;&lt;/a&gt;
+</code></pre>
+
+<h2>Todo</h2>
+
+<pre><code>配置评论功能
+</code></pre>
 </div>
 
 
@@ -144,7 +148,7 @@
   
 
 
-<time datetime="2012-08-22T14:38:00+08:00" pubdate data-updated="true">Aug 22<span>nd</span>, 2012</time>
+<time datetime="2012-08-23T07:51:00+08:00" pubdate data-updated="true">Aug 23<span>rd</span>, 2012</time>
       
 
 
@@ -160,10 +164,10 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/08/22/my-first-blog/" title="Previous Post: my first blog with Octopress">&laquo; my first blog with Octopress</a>
+        <a class="basic-alignment left" href="/blog/2012/08/22/ru-he-gong-zuo/" title="Previous Post: 如何工作">&laquo; 如何工作</a>
       
       
-        <a class="basic-alignment right" href="/blog/2012/08/22/ru-he-gong-zuo/" title="Next Post: 如何工作">如何工作 &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2012/08/23/comment/" title="Next Post: 增加评论功能">增加评论功能 &raquo;</a>
       
     </p>
   </footer>

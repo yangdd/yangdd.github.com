@@ -4,7 +4,7 @@
   <title><![CDATA[长老的 Octopress Blog]]></title>
   <link href="http://yangdd.github.com/atom.xml" rel="self"/>
   <link href="http://yangdd.github.com/"/>
-  <updated>2012-08-22T19:19:24+08:00</updated>
+  <updated>2012-08-23T10:29:26+08:00</updated>
   <id>http://yangdd.github.com/</id>
   <author>
     <name><![CDATA[长老]]></name>
@@ -12,6 +12,105 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[增加评论功能]]></title>
+    <link href="http://yangdd.github.com/blog/2012/08/23/comment/"/>
+    <updated>2012-08-23T10:18:00+08:00</updated>
+    <id>http://yangdd.github.com/blog/2012/08/23/comment</id>
+    <content type="html"><![CDATA[<p>没有用自带的<code>disgus</code>，添加<a href="http://duoshuo.com/">多说</a>评论</p>
+
+<p>在<code>_config.yml</code>添加：</p>
+
+<pre><code># Duoshuo Comments
+duoshuo_show_comment_count: true
+</code></pre>
+
+<p>在<code>source/_layouts/post.html</code>尾部添加：</p>
+
+<p>创建一个<code>source/_includes/post/duoshuo.html</code>：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="c">&lt;!--</span> <span class="nx">Duoshuo</span> <span class="nx">Comment</span> <span class="nx">BEGIN</span> <span class="o">--&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="nx">div</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&quot;ds-thread&quot;</span><span class="o">&gt;&lt;</span><span class="err">/div&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">duoshuoQuery</span> <span class="o">=</span> <span class="p">{</span><span class="nx">short_name</span><span class="o">:</span><span class="s2">&quot;yangdd&quot;</span><span class="p">};</span>
+</span><span class='line'>  <span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>      <span class="kd">var</span> <span class="nx">ds</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;script&#39;</span><span class="p">);</span>
+</span><span class='line'>      <span class="nx">ds</span><span class="p">.</span><span class="nx">type</span> <span class="o">=</span> <span class="s1">&#39;text/javascript&#39;</span><span class="p">;</span><span class="nx">ds</span><span class="p">.</span><span class="nx">async</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">ds</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="s1">&#39;http://static.duoshuo.com/embed.js&#39;</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">ds</span><span class="p">.</span><span class="nx">charset</span> <span class="o">=</span> <span class="s1">&#39;UTF-8&#39;</span><span class="p">;</span>
+</span><span class='line'>      <span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;head&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="o">||</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;body&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]).</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">ds</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">})();</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="err">/script&gt;</span>
+</span><span class='line'><span class="c">&lt;!--</span> <span class="nx">Duoshuo</span> <span class="nx">Comment</span> <span class="nx">END</span> <span class="o">--&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>多说自带分享功能，所以去掉原来的微博链接：<code>sharing.html</code>:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'>  <span class="o">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&quot;javascript:(function(){window.open(&#39;http://v.t.sina.com.cn/share/share.php?title=&#39;+encodeURIComponent(document.title)+&#39;&amp;url=&#39;+encodeURIComponent(location.href)+&#39;&amp;source=bookmark&#39;,&#39;_blank&#39;,&#39;width=250,height=200&#39;);})()&quot;</span> <span class="nx">title</span><span class="o">=</span><span class="s2">&quot;分享到新浪微博&quot;</span><span class="o">&gt;&lt;</span><span class="nx">img</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&quot;/images/sina_weibo_share.gif&quot;</span><span class="o">&gt;&lt;</span><span class="err">/a&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[修改分享功能]]></title>
+    <link href="http://yangdd.github.com/blog/2012/08/23/sharing/"/>
+    <updated>2012-08-23T07:51:00+08:00</updated>
+    <id>http://yangdd.github.com/blog/2012/08/23/sharing</id>
+    <content type="html"><![CDATA[<p>运行<code>find . |xargs grep Tweet 2&gt;/dev/null</code>
+（列出所有文件【含子目录】做全文搜索，2>/dev/null是重定向错误，因为有些目录没有访问权限）</p>
+
+<pre><code>./.themes/classic/source/_includes/asides/twitter.html:  &lt;h1&gt;Latest Tweets&lt;/h1&gt;
+./.themes/classic/source/_includes/post/sharing.html:  &lt;a href="http://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-via="{{ site.twitter_user }}" data-counturl="{{ site.url }}{{ page.url }}" &gt;Tweet&lt;/a&gt;
+./.themes/classic/source/javascripts/twitter.js:function linkifyTweet(text, url) {
+</code></pre>
+
+<!-- more -->
+
+
+<p>查看<code>sharing.html</code>找到</p>
+
+<pre><code>  {% if site.twitter_tweet_button %}
+&lt;a href="http://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-via="{{ site.twitter_user }}" data-counturl="{{ site.url }}{{ page.url }}" &gt;Tweet&lt;/a&gt;
+</code></pre>
+
+<p>修改<code>_config.yml</code></p>
+
+<pre><code>twitter_tweet_button 为 false
+</code></pre>
+
+<p>搞定！</p>
+
+<p>下面加一个分享到新浪微博的链接（从网上找了个weibo icon放在<code>source/images</code>目录）：
+还是<code>share.html</code>，增加：</p>
+
+<pre><code>  &lt;a href="javascript:(function(){window.open('http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent(document.title)+'&amp;amp;url='+encodeURIComponent(location.href)+'&amp;amp;source=bookmark','_blank','width=250,height=200');})()" title="分享到新浪微博"&gt;&lt;img src="http://yangdd.github.com/images/sina_weibo.gif"&gt;&lt;/a&gt;
+</code></pre>
+
+<h2>Todo</h2>
+
+<pre><code>配置评论功能
+</code></pre>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[如何工作]]></title>

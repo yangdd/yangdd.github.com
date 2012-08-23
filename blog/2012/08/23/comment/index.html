@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>长老的 Octopress Blog</title>
+  <title>增加评论功能 - 长老的 Octopress Blog</title>
   <meta name="author" content="长老">
 
   
@@ -19,7 +19,7 @@ duoshuo_show_comment_count: true 在source/_layouts/post.html尾部添加： 创
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://yangdd.github.com/">
+  <link rel="canonical" href="http://yangdd.github.com/blog/2012/08/23/comment/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -64,15 +64,12 @@ duoshuo_show_comment_count: true 在source/_layouts/post.html尾部添加： 创
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2012/08/23/comment/">增加评论功能</a></h1>
+      <h1 class="entry-title">增加评论功能</h1>
     
     
       <p class="meta">
@@ -95,7 +92,7 @@ duoshuo_show_comment_count: true 在source/_layouts/post.html尾部添加： 创
   </header>
 
 
-  <div class="entry-content"><p>没有用自带的<code>disgus</code>，添加<a href="http://duoshuo.com/">多说</a>评论</p>
+<div class="entry-content"><p>没有用自带的<code>disgus</code>，添加<a href="http://duoshuo.com/">多说</a>评论</p>
 
 <p>在<code>_config.yml</code>添加：</p>
 
@@ -145,69 +142,16 @@ duoshuo_show_comment_count: true
 
 
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/08/23/sharing/">修改分享功能</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
 
+<span class="byline author vcard">Posted by <span class="fn">长老</span></span>
 
-<time datetime="2012-08-23T07:51:00+08:00" pubdate data-updated="true">Aug 23<span>rd</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>运行<code>find . |xargs grep Tweet 2&gt;/dev/null</code>
-（列出所有文件【含子目录】做全文搜索，2>/dev/null是重定向错误，因为有些目录没有访问权限）</p>
-
-<pre><code>./.themes/classic/source/_includes/asides/twitter.html:  &lt;h1&gt;Latest Tweets&lt;/h1&gt;
-./.themes/classic/source/_includes/post/sharing.html:  &lt;a href="http://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-via="{{ site.twitter_user }}" data-counturl="{{ site.url }}{{ page.url }}" &gt;Tweet&lt;/a&gt;
-./.themes/classic/source/javascripts/twitter.js:function linkifyTweet(text, url) {
-</code></pre>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/08/23/sharing/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/08/22/ru-he-gong-zuo/">如何工作</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
@@ -219,139 +163,31 @@ duoshuo_show_comment_count: true
   
 
 
-<time datetime="2012-08-22T15:06:00+08:00" pubdate data-updated="true">Aug 22<span>nd</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>生病休息期间重读了《重来》，有一句话很有触动：
-我们一直要求用更少的资源去做更多的事情，《Rework》展示了如何做更少的事情，却创造更多的价值。</p>
-
-<h2>时间管理：</h2>
-
-<p>做更多，更快，更高效。我有时会进入更匆忙的误区，一个例子就是（写字）。小学时我的字属于鬼画符型，高中专门练了练，也得过硬笔书法的小奖，到现在很少写字（主要是填表），总想赶时间写快，结果就惨不忍睹了。</p>
-
-<h2>为什么时间总是不够？</h2>
-
-<p>是因为没有安排好自己的时间，还是应承了超过个人能力的事情？或者是自我表现想当英雄？</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/08/22/ru-he-gong-zuo/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
+<time datetime="2012-08-23T10:18:00+08:00" pubdate data-updated="true">Aug 23<span>rd</span>, 2012</time>
       
-  <header>
+
+
+    </p>
     
-      <h1 class="entry-title"><a href="/blog/2012/08/22/sick-last-week/">重病一场</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
+      <div class="sharing">
   
-
-
-<time datetime="2012-08-22T14:38:00+08:00" pubdate data-updated="true">Aug 22<span>nd</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>上周意想不到的大病一场，病中反思了原因，也制定了避免一个重蹈覆辙的计划。</p>
-
-<p>其实天气没有大的变化，生病主要还是内因。有一种“病有五因”的说法：
-1.人体内正气不足，致使邪气有机可乘
-2.饮食不规律
-3.缺乏运动
-4.情志不遂
-5.药物滥用
-这样说，我这次就属于正气不足了。</p>
-
+  
+  
+  
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/08/22/sick-last-week/">Read on &rarr;</a>
-    </footer>
-  
 
-
-    </article>
-  
-  
-    <article>
+    
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/08/22/my-first-blog/">My First Blog With Octopress</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-08-22T10:57:00+08:00" pubdate data-updated="true">Aug 22<span>nd</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>打算开博了，本来准备用新浪，结果发现这个章鱼哥，结合Git,Markdown和Ruby,很有意思，于是花了几个小时折腾，第一遍文章也就变成建站经过了。</p>
-
-<p>我用的是mac 10.8 mountain lion</p>
-
-<h2>1. mac自带的ruby是1.8，Octopress需要1.9以上，先装RVM,mac上有<a href="http://unfiniti.com/software/mac/jewelrybox">Jewelrybox</a>，</h2>
-
-<pre><code>1.1 发觉又需要gcc编译ruby，而xcode 4.2后没有gcc了，只好去装&lt;a href="https://github.com/kennethreitz/osx-gcc-installer"&gt;osx-gcc-installer&lt;/a&gt;先
-1.2 ruby 1.9.3 装上，可是Gemsets显示bundler 1.1.5有错，只好手动安装：gem install bundler （之前要切换ruby版本：rvm --default user 1.9.3，然后ruby -v核实，其实应该用Jewelrybox去设置）
-</code></pre>
+        <a class="basic-alignment left" href="/blog/2012/08/23/sharing/" title="Previous Post: 修改分享功能">&laquo; 修改分享功能</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/08/22/my-first-blog/">Read on &rarr;</a>
-    </footer>
-  
 
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
 <aside class="sidebar">
   
     <section>
@@ -388,6 +224,27 @@ duoshuo_show_comment_count: true
 
   
 </aside>
+
+
+
+<section id=”comment”>
+<h1>发表评论</h1>
+<!-- Duoshuo Comment BEGIN -->
+	<div class="ds-thread"></div>
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"yangdd"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- Duoshuo Comment END -->
+
+</section>
+
 
     </div>
   </div>
