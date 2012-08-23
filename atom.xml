@@ -4,7 +4,7 @@
   <title><![CDATA[长老的 Octopress Blog]]></title>
   <link href="http://yangdd.github.com/atom.xml" rel="self"/>
   <link href="http://yangdd.github.com/"/>
-  <updated>2012-08-23T10:29:26+08:00</updated>
+  <updated>2012-08-23T12:24:18+08:00</updated>
   <id>http://yangdd.github.com/</id>
   <author>
     <name><![CDATA[长老]]></name>
@@ -26,7 +26,28 @@
 duoshuo_show_comment_count: true
 </code></pre>
 
+<!-- more -->
+
+
 <p>在<code>source/_layouts/post.html</code>尾部添加：</p>
+
+<figure class='code'><figcaption><span> (duoshuo.html)</span> <a href='http://yangdd.github.com/downloads/code/duoshuo.html'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>{% if site.duoshuo_show_comment_count==true %}
+</span><span class='line'><span class="nt">&lt;section</span> <span class="na">id=</span><span class="s">”comment”</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;h1&gt;</span>发表评论<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>{% include post/duoshuo.html %}
+</span><span class='line'><span class="nt">&lt;/section&gt;</span>
+</span><span class='line'>{% endif %}
+</span><span class='line'>  
+</span></code></pre></td></tr></table></div></figure>
+
 
 <p>创建一个<code>source/_includes/post/duoshuo.html</code>：</p>
 
