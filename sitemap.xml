@@ -2,7 +2,7 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://yangdd.github.com/blog/2012/08/22/my-first-blog/</loc>
-        <lastmod>2012-08-23T12:38:11+08:00</lastmod>
+        <lastmod>2012-08-23T16:26:04+08:00</lastmod>
     </url>
     <url>
         <loc>http://yangdd.github.com/blog/2012/08/22/sick-last-week/</loc>
@@ -18,7 +18,15 @@
     </url>
     <url>
         <loc>http://yangdd.github.com/blog/2012/08/23/comment/</loc>
-        <lastmod>2012-08-23T12:38:11+08:00</lastmod>
+        <lastmod>2012-08-23T14:59:03+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://yangdd.github.com/blog/2012/08/23/mac/</loc>
+        <lastmod>2012-08-30T22:53:22+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://yangdd.github.com/blog/2012/08/30/early-bird/</loc>
+        <lastmod>2012-08-30T22:53:35+08:00</lastmod>
     </url>
     <url>
         <loc>http://yangdd.github.com/404.html</loc>
@@ -26,10 +34,10 @@
     </url>
     <url>
         <loc>http://yangdd.github.com/blog/archives/</loc>
-        <lastmod>2012-08-23T12:09:13+08:00</lastmod>
+        <lastmod>2012-08-30T22:53:35+08:00</lastmod>
     </url>
     <url>
         <loc>http://yangdd.github.com/</loc>
-        <lastmod>2012-08-23T12:09:13+08:00</lastmod>
+        <lastmod>2012-08-30T22:53:35+08:00</lastmod>
     </url>
 </urlset>
