@@ -4,7 +4,7 @@
   <title><![CDATA[长老的 Octopress Blog]]></title>
   <link href="http://yangdd.github.com/atom.xml" rel="self"/>
   <link href="http://yangdd.github.com/"/>
-  <updated>2012-08-30T22:54:00+08:00</updated>
+  <updated>2012-09-05T21:02:48+08:00</updated>
   <id>http://yangdd.github.com/</id>
   <author>
     <name><![CDATA[长老]]></name>
@@ -79,7 +79,23 @@
     <id>http://yangdd.github.com/blog/2012/08/23/mac</id>
     <content type="html"><![CDATA[<p>去年入手macbook pro，此后90%时间都在用它，thinkpad小黑只是偶尔动一下了。</p>
 
-<h2>未完</h2>
+<p>用了也一年了，总结一下mac的优点：</p>
+
+<!-- more -->
+
+
+<ol>
+<li>长时间待机。这个优点现在不明显了。最开始snow leopard可以用7个小时以上（邮件，上网），随着lion，mountain lion升级，耗电也上来，加上电池损耗（容量下降到90%），现在只能用5个小时了</li>
+<li>快速休眠和唤醒，感觉和用ipad一样，合上盖即可，很可靠，不想windows，有时休眠会失败，唤醒也慢</li>
+<li>稳定，没有windows的BSOD（蓝屏），有过两次应用引起的NR（no response)，长按Power关机后，再开机，所有的应用（包括打开的网页，写了一半的文档邮件）都恢复了，很可靠</li>
+<li>方便的触控板，单指点触，双指滚动，缩放等，再配合Jitouch工具，就没有用过鼠标，加上快捷键，4、5两项平时可以省下点滴的时间</li>
+<li>强大的搜索功能。 现在是搜索时代，不用花太多时间整理文件夹啥的。mac带的spotlight全盘搜索文件（win上原来有个google桌面），很方便的，配合上alfred这个launcher，完全用不着开始菜单这种东东</li>
+<li>mac有一些很好的工具，像用于GTD的omnifocus，个人资料管理DEVONthink等，当然工具只是辅助，关键还是好的习惯</li>
+<li>mac毕竟是unix一脉，要玩玩gnu，开源很方便，当然windows也有cygwin，毕竟不是原生的</li>
+</ol>
+
+
+<p>缺点当然也有，最主要是软件种类，到没有大碍。还有有的网站只支持IE，所以不得已装了个虚拟机，虽然用的时候不到1%</p>
 ]]></content>
   </entry>
   
