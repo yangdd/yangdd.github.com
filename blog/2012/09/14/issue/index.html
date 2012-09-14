@@ -110,13 +110,13 @@ Building site: &hellip;">
 
 <p>两周前发blog时还好好的，于是我问：<code>这里有什么改变了？</code>。由于错误信息提到<code>_config.yml</code>，而这是唯一的一个yaml文件，于是首先我查了它的修改时期，最近没有动过，打开看第<strong>6</strong>行也没有问题，其实已经可以排除了，由于钻了牛角尖和对系统了解不够，我又在<code>irb</code>里解析了此文件：</p>
 
-<figure class='code'><figcaption><span>lang=ruby </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>require 'yaml'
-</span><span class='line'>YAML::ENGINE.yamler = 'psych'
-</span><span class='line'>YAML.load_file('_config.yml')</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">require</span> <span class="s1">&#39;yaml&#39;</span>
+</span><span class='line'><span class="no">YAML</span><span class="o">::</span><span class="no">ENGINE</span><span class="o">.</span><span class="n">yamler</span> <span class="o">=</span> <span class="s1">&#39;psych&#39;</span>
+</span><span class='line'><span class="no">YAML</span><span class="o">.</span><span class="n">load_file</span><span class="p">(</span><span class="s1">&#39;_config.yml&#39;</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
 <p>验证正常！到这里进入了死胡同，其实我应该再想想问题：<code>从上次正常状态以来，有什么文件改变了？</code>，答案就在那里！</p>
