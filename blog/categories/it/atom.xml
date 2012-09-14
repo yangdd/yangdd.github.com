@@ -4,7 +4,7 @@
   <title><![CDATA[Category: IT | 长老的 Octopress Blog]]></title>
   <link href="http://yangdd.github.com/blog/categories/it/atom.xml" rel="self"/>
   <link href="http://yangdd.github.com/"/>
-  <updated>2012-09-05T21:02:48+08:00</updated>
+  <updated>2012-09-14T20:27:43+08:00</updated>
   <id>http://yangdd.github.com/</id>
   <author>
     <name><![CDATA[长老]]></name>
@@ -12,6 +12,80 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[使用Octopress遇到的问题]]></title>
+    <link href="http://yangdd.github.com/blog/2012/09/14/issue/"/>
+    <updated>2012-09-14T17:42:00+08:00</updated>
+    <id>http://yangdd.github.com/blog/2012/09/14/issue</id>
+    <content type="html"><![CDATA[<p>今天本来在写问问题的技巧，结果发表时出了错：
+<code>rake generate</code> 生成网页，得到：
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>Configuration from /Users/yangdi/code/yangdd.github.com/_config.yml
+</span><span class='line'>Building site: <span class="nb">source</span> -&gt; public
+</span><span class='line'>/Users/yangdi/.rvm/rubies/ruby-1.9.3-head/lib/ruby/1.9.1/psych.rb:203:in <span class="sb">`</span>parse<span class="s1">&#39;: (&lt;unknown&gt;): could not find expected &#39;</span>:<span class="s1">&#39; while scanning a simple key at line 6 column 1 (Psych::SyntaxError)&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="s1">&lt;pre&gt;&lt;code&gt;    from /Users/yangdi/.rvm/rubies/ruby-1.9.3-head/lib/ruby/1.9.1/psych.rb:203:in `parse_stream&#39;</span>
+</span><span class='line'>    from /Users/yangdi/.rvm/rubies/ruby-1.9.3-head/lib/ruby/1.9.1/psych.rb:151:in <span class="sb">`</span>parse<span class="s1">&#39;</span>
+</span><span class='line'><span class="s1">    from /Users/yangdi/.rvm/rubies/ruby-1.9.3-head/lib/ruby/1.9.1/psych.rb:127:in `load&#39;</span>
+</span><span class='line'>    from /Users/yangdi/.rvm/gems/ruby-1.9.3-head/gems/jekyll-0.11.2/lib/jekyll/convertible.rb:33:in <span class="sb">`</span>read_yaml<span class="err">&#39;</span>
+</span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;...
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<!-- more -->
+
+
+<p>两周前发blog时还好好的，于是我问：<code>这里有什么改变了？</code>。由于错误信息提到<code>_config.yml</code>，而这是唯一的一个yaml文件，于是首先我查了它的修改时期，最近没有动过，打开看第<strong>6</strong>行也没有问题，其实已经可以排除了，由于钻了牛角尖和对系统了解不够，我又在<code>irb</code>里解析了此文件：
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>lang=ruby </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>require 'yaml'
+</span><span class='line'>YAML::ENGINE.yamler = 'psych'
+</span><span class='line'>YAML.load_file('_config.yml')</span></code></pre></td></tr></table></div></figure></notextile></div>
+验证正常！到这里进入了死胡同，其实我应该再想想问题：<code>从上次正常状态以来，有什么文件改变了？</code>，答案就在那里！</p>
+
+<p>你想到了吗？</p>
+
+<p>我没有。最后使用了暴力方法，<code>DTrace</code>监控所有的文件打开操作，再开个终端窗口：</p>
+
+<pre><code>sudo dtrace -n 'syscall::open*:entry { printf("%s %s", execname, copyinstr(arg0)); }' | grep _posts
+</code></pre>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>dtrace: description <span class="s1">&#39;syscall::open*:entry &#39;</span> matched 4 probes
+</span><span class='line'>dtrace: error on enabled probe ID 4 <span class="o">(</span>ID 141: syscall::open:entry<span class="o">)</span>: invalid address <span class="o">(</span>0x1044d265d<span class="o">)</span> in action <span class="c">#2 at DIF offset 24</span>
+</span><span class='line'>dtrace: error on enabled probe ID 4 <span class="o">(</span>ID 141: syscall::open:entry<span class="o">)</span>: invalid address <span class="o">(</span>0x1028cc65d<span class="o">)</span> in action <span class="c">#2 at DIF offset 24</span>
+</span><span class='line'>dtrace: 1289 drops on CPU 2
+</span><span class='line'>dtrace: error on enabled probe ID 4 <span class="o">(</span>ID 141: syscall::open:entry<span class="o">)</span>: invalid address <span class="o">(</span>0x102e2e65d<span class="o">)</span> in action <span class="c">#2 at DIF offset 24</span>
+</span><span class='line'>  2    141                       open:entry ruby /Users/yangdi/code/yangdd.github.com/source/&lt;em&gt;posts/2012-08-22-my-first-blog.markdown
+</span><span class='line'>...
+</span><span class='line'>  2    141                       open:entry ruby /Users/yangdi/code/yangdd.github.com/source/&lt;/em&gt;posts/2012-08-30-early-bird.markdown
+</span><span class='line'>  2    141                       open:entry ruby /Users/yangdi/code/yangdd.github.com/source/_posts/2012-09-14-ask.markdown
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+注意最后一行就是答案<code>2012-09-14-ask.markdown</code>，原来在文件第<strong>6</strong>行<code>categories:</code>后少了一个空格！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[我为什么用mac]]></title>
