@@ -4,7 +4,7 @@
   <title><![CDATA[长老的 Octopress Blog]]></title>
   <link href="http://yangdd.github.com/atom.xml" rel="self"/>
   <link href="http://yangdd.github.com/"/>
-  <updated>2012-09-14T21:04:18+08:00</updated>
+  <updated>2012-09-15T20:36:42+08:00</updated>
   <id>http://yangdd.github.com/</id>
   <author>
     <name><![CDATA[长老]]></name>
@@ -86,7 +86,9 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>注意最后一行就是答案<code>2012-09-14-ask.markdown</code>，原来在文件第<strong>6</strong>行<code>categories:</code>后少了一个空格！</p>
+<p>注意最后一行就是答案<code>2012-09-14-ask.markdown</code>，其实现在和以前正常状态的区别就是多了刚写的这篇博客！这就是答案。</p>
+
+<p>至于问题很简单，在文件第<strong>6</strong>行<code>categories:</code>后少了一个空格。</p>
 ]]></content>
   </entry>
   
