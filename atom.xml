@@ -4,7 +4,7 @@
   <title><![CDATA[长老的 Octopress Blog]]></title>
   <link href="http://yangdd.github.com/atom.xml" rel="self"/>
   <link href="http://yangdd.github.com/"/>
-  <updated>2012-09-15T20:36:42+08:00</updated>
+  <updated>2012-09-27T11:22:08+08:00</updated>
   <id>http://yangdd.github.com/</id>
   <author>
     <name><![CDATA[长老]]></name>
@@ -12,6 +12,28 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[asking for more: 问问题实战]]></title>
+    <link href="http://yangdd.github.com/blog/2012/09/27/practice/"/>
+    <updated>2012-09-27T10:50:00+08:00</updated>
+    <id>http://yangdd.github.com/blog/2012/09/27/practice</id>
+    <content type="html"><![CDATA[<p>不能算成功，但是积累了经验。</p>
+
+<p>保险公司送了两张体检卡，只能60岁以下使用，我想给父母不用白不用，他们自己咨询说是不行。</p>
+
+<p>于是我想练习谈判机会到了。</p>
+
+<!-- more -->
+
+
+<p>刚才打了个电话，一个小姑娘接的，一听我父母的年纪就说不行，于是我请她帮我个忙，教我为什么老人不能用，如果我们只做项目里包含的常规检查，她只是说这是医院领导和保险公司的合作，规定下来的年龄范围，老人来要另付费，而且即使预约了体验医生也不会做。试着寒暄建立个人联系未果（但是我也没有在最开始问出<code>“最近还好吗”</code>这样的问题，下次再来），又谈了我父母的事，尝试得到共鸣（谁都有父母嘛），不成功（估计小姑娘还年轻 <img src="http://yangdd.github.com/images/icon_smile.gif" alt="" />），而且有点不耐烦了，说她也没有权力，于是我问：<code>谁能做这个决定？能给我你的领导电话我找他谈吗？</code>。</p>
+
+<p>结果一会另一位女士接了电话，明显经验更丰富，没说别的，给我解释了一下具体项目，老人做没有啥意义，除了最基本的常规（身高等，对我们也没啥用），建议老人应该查查血糖，血脂，肝功，肾功等（这些都不在此体检卡内）。我接受了这个解释，也再次谈了谈父母的情况（目的同上），最后问了问领导贵姓（万一一会我们还想做或有别提问题知道该找谁嘛）。</p>
+
+<p>所以说目的没达到，不过似乎也没必要了。（本来我还想一次不成就再打，换一位接线员再试的 <img src="http://yangdd.github.com/images/icon_smile.gif" alt="" />）</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[使用Octopress遇到的问题]]></title>
