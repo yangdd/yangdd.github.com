@@ -4,7 +4,7 @@
   <title><![CDATA[Category: life | 长老的 Octopress Blog]]></title>
   <link href="http://yangdd.github.com/blog/categories/life/atom.xml" rel="self"/>
   <link href="http://yangdd.github.com/"/>
-  <updated>2012-09-27T11:22:08+08:00</updated>
+  <updated>2012-10-31T21:34:06+08:00</updated>
   <id>http://yangdd.github.com/</id>
   <author>
     <name><![CDATA[长老]]></name>
@@ -12,6 +12,100 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[漫谈时间管理]]></title>
+    <link href="http://yangdd.github.com/blog/2012/10/31/man-tan-shi-jian-guan-li/"/>
+    <updated>2012-10-31T21:02:00+08:00</updated>
+    <id>http://yangdd.github.com/blog/2012/10/31/man-tan-shi-jian-guan-li</id>
+    <content type="html"><![CDATA[<p>自从《高效能人士的七个习惯》后，以紧急和重要做的2x2矩阵也深入人心，但是道理知道了，如何落实到实践中，谈谈我的心得如下。</p>
+
+<p>如果早上有以下4件事：</p>
+
+<!-- more -->
+
+
+<ol>
+<li>处理客户投诉</li>
+<li>出差费用报销</li>
+<li>制作项目安排PPT</li>
+<li>预约客户访问</li>
+<li>写会议记录</li>
+</ol>
+
+
+<p>可以放入矩阵如下：</p>
+
+<table class="table table-bordered table-striped table-condensed">
+   <tr>
+      <td>5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>处理客户投诉</td>
+   </tr>
+   <tr>
+      <td>4</td>
+      <td></td>
+      <td></td>
+      <td>预约客户访问</td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>3</td>
+      <td></td>
+      <td>写会议记录</td>
+      <td></td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>制作项目安排PPT</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>1</td>
+      <td>出差费用报销</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>紧急度/重要性</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+   </tr>
+</table>
+
+
+<p>如果从<code>优先级=重要性x紧急度</code>考虑的话，工作顺序如下：</p>
+
+<ol>
+<li>处理客户投诉</li>
+<li>预约客户访问</li>
+<li>制作项目安排PPT</li>
+<li>写会议记录</li>
+<li>出差费用报销</li>
+</ol>
+
+
+<p>还有一种思考方法是以<code>紧急度</code>与<code>工作量</code>来考虑，又会有一种不同的安排。</p>
+
+<p>其实我也不是这么严格，有时候会根据大脑思考的模式工作，把相似的放在一起做，在疲劳时做不费脑的（出差费用报销等），或者做不同的事。比如我看书一般也是几本一起看，旅游摄影的，小说，思维模式的，软件开发的，疲劳了就换一本。</p>
+
+<p>好了，该换换了，看看邮件吧。<img src="/images/icon_smile.gif" alt="" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[asking for more: 问问题实战]]></title>
