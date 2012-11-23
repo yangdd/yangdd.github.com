@@ -4,7 +4,7 @@
   <title><![CDATA[长老的 Octopress Blog]]></title>
   <link href="http://yangdd.github.com/atom.xml" rel="self"/>
   <link href="http://yangdd.github.com/"/>
-  <updated>2012-11-01T21:45:21+08:00</updated>
+  <updated>2012-11-23T10:10:23+08:00</updated>
   <id>http://yangdd.github.com/</id>
   <author>
     <name><![CDATA[长老]]></name>
@@ -12,6 +12,56 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[清单革命]]></title>
+    <link href="http://yangdd.github.com/blog/2012/11/23/checklist/"/>
+    <updated>2012-11-23T09:36:00+08:00</updated>
+    <id>http://yangdd.github.com/blog/2012/11/23/checklist</id>
+    <content type="html"><![CDATA[<p>这里借用了一本书的名字，但是<code>事务清单</code>确实是一种更聪明而非更努力的方法(work smart not work hard)，写到这里忽然发觉我从上学时就一直在这样寻找“如何学的少而且学得好”的方法 (google一下这个topic，有篇不错的文章)，可惜那时资讯不多。</p>
+
+<p>回到正题，你可以在每天起床后（早一点给自己10分钟），列出计划当天完成的任务（一定要<code>写下来</code>或如果用电脑、手机也要输入，不要靠记忆），每天晚上检查完成了多少，可以当成一个游戏：目标100分。（我的习惯是晚上列第二天的事）</p>
+
+<!-- more -->
+
+
+<p>要点：<code>一定要排序</code>：</p>
+
+<ul>
+<li>A: must do</li>
+<li>B: should do</li>
+<li>C: nice to do
+(附录有一个分类的建议)</li>
+</ul>
+
+
+<p>简单吗：其实最困难的部分是：  <code>坚持每天做</code>，一次很容易，天天做就不一样了。</p>
+
+<p>还有一个就是，A类工作一般会有一下特点之一（或几个）：</p>
+
+<ul>
+<li>需要大块时间</li>
+<li>比较困难</li>
+<li>不太喜欢做</li>
+</ul>
+
+
+<p>这是我们就容易犯上所谓的<code>“拖延症”</code>，有一个办法就是问自己：此任务的下一个行动是什么？关注具体的行动，并且将任务分解为小块，用老鼠搬家的方式完成，实际上有时一旦开始（克服了自己的逃避心理），就容易做下去了。还可以给自己计划一个完成任务后的奖励，可以小到起来走走喝杯咖啡等。</p>
+
+<p>试试吧，如果对你有用习惯后可以进一步了解尝试GTD。</p>
+
+<p>ps:推荐阅读《如何掌控自己的时间和生活》，《拖延心理学》，《自控力》</p>
+
+<p>pps: 任务分类示例：</p>
+
+<ul>
+<li>A 级工作是非常重要的工作,是你必须做的工作,否则就会面 临严重后果。A 级工作可能是拜访一个关键的客户,或者完成你老板要用的报告。这些工作是你生活中占最重要的地位。如果 A 级工作不止一项,你可以分一分轻重缓急,在每一项前面分别标上A1、A2、A3 等。</li>
+<li>B 级工作是你应当做的工作,但后果不很严重。这些工作占次重要的地位。意思就是说,如果你不做,有人可能会不高兴或不舒服,但它决不像 A 级工作那么重要。回一个不重要的电话 或查看你的电子邮件都属于B级工作。规则是,如果还有A 级工作没有做完,决不要去做B 级工 作。决不要捡了芝麻丢了西瓜。</li>
+<li>C 级工作是做了更好、不做也不会有什么不良后果的工作。C 级工作包括给一个朋友打电话,跟某个同事一起喝咖啡或吃饭,或者在工作时间完成某项私人事情。这类活动对你的工作生活没有任何重大影响。</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[姿势与健康（兼谈早起）]]></title>
