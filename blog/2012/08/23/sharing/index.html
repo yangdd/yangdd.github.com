@@ -76,7 +76,7 @@
 （列出所有文件【含子目录】做全文搜索，2>/dev/null是重定向错误，因为有些目录没有访问权限）</p>
 
 <pre><code>./.themes/classic/source/_includes/asides/twitter.html:  &lt;h1&gt;Latest Tweets&lt;/h1&gt;
-./.themes/classic/source/_includes/post/sharing.html:  &lt;a href="http://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-via="{{ site.twitter_user }}" data-counturl="{{ site.url }}{{ page.url }}" &gt;Tweet&lt;/a&gt;
+./.themes/classic/source/_includes/post/sharing.html:  &lt;a href="http://twitter.com/share" class="twitter-share-button" data-url="http://yangdd.github.com/blog/2012/08/23/sharing/" data-via="" data-counturl="http://yangdd.github.com/blog/2012/08/23/sharing/" &gt;Tweet&lt;/a&gt;
 ./.themes/classic/source/javascripts/twitter.js:function linkifyTweet(text, url) {
 </code></pre>
 
@@ -84,10 +84,6 @@
 
 
 <p>查看<code>sharing.html</code>找到</p>
-
-<pre><code>  {% if site.twitter_tweet_button %}
-&lt;a href="http://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-via="{{ site.twitter_user }}" data-counturl="{{ site.url }}{{ page.url }}" &gt;Tweet&lt;/a&gt;
-</code></pre>
 
 <p>修改<code>_config.yml</code></p>
 
@@ -99,7 +95,7 @@
 <p>下面加一个分享到新浪微博的链接（从网上找了个weibo icon放在<code>source/images</code>目录）：
 还是<code>share.html</code>，增加：</p>
 
-<pre><code>  &lt;a href="javascript:(function(){window.open('http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent(document.title)+'&amp;amp;url='+encodeURIComponent(location.href)+'&amp;amp;source=bookmark','_blank','width=250,height=200');})()" title="分享到新浪微博"&gt;&lt;img src="/images/sina_weibo.gif"&gt;&lt;/a&gt;
+<pre><code>  &lt;a href="javascript:(function(){window.open('http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent(document.title)+'&amp;amp;url='+encodeURIComponent(location.href)+'&amp;amp;source=bookmark','_blank','width=250,height=200');})()" title="分享到新浪微博"&gt;&lt;img src="/images/sina_weibo_share.gif"&gt;&lt;/a&gt;
 </code></pre>
 
 <h2>Todo</h2>
@@ -131,17 +127,21 @@
 		<span class="comments"><a href="/blog/2012/08/23/sharing/#comments">评论</a></span>
 	
 </div></article>
-<!-- 
+ 
 
 	<div class="share">
-	<div class="addthis_toolbox addthis_default_style ">
+
+	  <a href="javascript:(function(){window.open('http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent(document.title)+'&amp;url='+encodeURIComponent(location.href)+'&amp;source=bookmark','_blank','width=250,height=200');})()" title="分享到新浪微博"><img src="/images/sina_weibo_share.gif"></a> 
+	   
+  		
 	
 	
 	
+
 </div>
 
 
--->
+
 
 
 <a name="comments"></a>
