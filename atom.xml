@@ -4,7 +4,7 @@
   <title><![CDATA[长老的 Octopress Blog]]></title>
   <link href="http://yangdd.github.com/atom.xml" rel="self"/>
   <link href="http://yangdd.github.com/"/>
-  <updated>2013-02-05T10:53:00+08:00</updated>
+  <updated>2013-04-16T14:45:31+08:00</updated>
   <id>http://yangdd.github.com/</id>
   <author>
     <name><![CDATA[长老]]></name>
@@ -12,6 +12,34 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[我常用的Mac工具]]></title>
+    <link href="http://yangdd.github.com/blog/2013/04/16/tools/"/>
+    <updated>2013-04-16T11:52:00+08:00</updated>
+    <id>http://yangdd.github.com/blog/2013/04/16/tools</id>
+    <content type="html"><![CDATA[<p>用了Mac一年来，有了一些经验，用过很多软件，以下是现在常用的（感觉是不是用mac的极客比例高一点，好多不错的工具都没有windows版本的 <img src="http://yangdd.github.com/images/icon_smile.gif" alt="" />）：</p>
+
+<!-- more -->
+
+
+<ol>
+<li><p>jitouch (http://www.jitouch.com)，触控板软件，各种手势操作，特色是可以画字符来激活操作，比如画一个S，我设为热键cmd+S，非常方便，单手即可操作。</p></li>
+<li><p>Popclip (http://pilotmoon.com/popclip/)，有点像iOS, 选择文本后自动显示选项：拷贝/粘贴，打开网址，查字典，查搜索引擎，查spotlight等等，还有插件。</p></li>
+<li><p>Totalfinder (或pathfinder), 习惯了浏览器的多标签，文件浏览没有实在不好用。类似还有total terminal，需要开多个终端窗口可用。</p></li>
+<li><p>Hyperdock (http://hyperdock.bahoom.com)，模仿windows7的dock图标窗口预览功能，对我最好使的是在日历图标上停留能够显示今明两天calendar，很方便。</p></li>
+<li><p>Battery Time Remaining (https://github.com/codler/Battery-Time-Remaining)，电池监控保养。</p></li>
+<li><p>系统助手 （Appstore），实时查看内存，CPU占用。</p></li>
+<li><p>Alfred V2 （http://www.alfredapp.com），必备。比spotlight好用，加上自定义workflow（需要Powerpack），手指不离键盘可以做各种操作。</p></li>
+<li><p>防火墙软件：Hands off 或 little Snitch。</p></li>
+<li><p>sogou输入法，自带的也不错就是没有shift键中英文切换功能。</p></li>
+<li><p>Parallel Desktop，这个不说了，虚拟机跑windows。</p></li>
+</ol>
+
+
+<p>其他还有一些工具，omni focus等，不一定都需要，就不提了。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[如何改进自己/如何培养新习惯]]></title>
