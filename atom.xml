@@ -4,7 +4,7 @@
   <title><![CDATA[长老的 Octopress Blog]]></title>
   <link href="http://yangdd.github.com/atom.xml" rel="self"/>
   <link href="http://yangdd.github.com/"/>
-  <updated>2013-04-16T14:45:31+08:00</updated>
+  <updated>2013-05-15T22:34:44+08:00</updated>
   <id>http://yangdd.github.com/</id>
   <author>
     <name><![CDATA[长老]]></name>
@@ -12,6 +12,66 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[从记忆钉谈起]]></title>
+    <link href="http://yangdd.github.com/blog/2013/05/15/memory/"/>
+    <updated>2013-05-15T21:29:00+08:00</updated>
+    <id>http://yangdd.github.com/blog/2013/05/15/memory</id>
+    <content type="html"><![CDATA[<p>现在有了智能手机，加上年纪大了，基本上不靠记忆（好记性不如烂笔头嘛），但凡想起啥事，马上用any.do记下来，心里也踏实，GTD的好处哈，心如止水。</p>
+
+<p>但也有用脑的时候：坐飞机，手机关机了。（平时也有每周五下午的定时回顾（review），主要是针对本周及以后的工作【又是GTD】，）飞机上是胡思乱想，想起一出是一出，有了新点子，怎么记住？这些想法都是来了一会就走的，这时候记忆钉就起作用了。</p>
+
+<!-- more -->
+
+
+<p>其实就是0-9的多米尼克体系：用0-9构建一个记忆框架，把要记的内容挂起来，但是和传统的数字体系不同，是根据数字的字形作形象化联想，然后想象一个生动的画面和它联系起来。</p>
+
+<p>我的框架是：</p>
+
+<ul>
+<li>0-轮胎，游泳圈</li>
+<li>1-蜡烛</li>
+<li>2-鸭子</li>
+<li>3-耳朵</li>
+<li>4-帆船</li>
+<li>5-挂钩</li>
+<li>6-高尔夫球棍</li>
+<li>7-斧头</li>
+<li>8-雪人</li>
+<li>9-蝌蚪</li>
+</ul>
+
+
+<p>比如，今天飞机上想到的：</p>
+
+<ol>
+<li>美国老板要来，要准备</li>
+<li>看杂志介绍有个“本来生活”的网站买各种绿色食品，水果啥的，可以上去看看</li>
+<li>xxx</li>
+<li>xxx</li>
+<li>安排一个内部的会议</li>
+</ol>
+
+
+<p>想象为：</p>
+
+<ul>
+<li>0=老板在中国吃的美，渐渐变胖，腰上像个游泳圈</li>
+<li>1=小时候晚饭停电，点着蜡烛，吃着原生态的有机食品</li>
+<li>2=xxx</li>
+<li>3=xxx</li>
+<li>4=员工会议在颐和园包个船</li>
+</ul>
+
+
+<p>当然，到了酒店，根据记忆，很快的输入电脑或写在纸上，就不用再费脑了。</p>
+
+<p>如何？试试？</p>
+
+<p>顺便说说，别每天埋头工作，定时抬头看看路，想一想。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[我常用的Mac工具]]></title>
