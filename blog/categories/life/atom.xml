@@ -4,7 +4,7 @@
   <title><![CDATA[Category: life | 长老的 Octopress Blog]]></title>
   <link href="http://yangdd.github.com/blog/categories/life/atom.xml" rel="self"/>
   <link href="http://yangdd.github.com/"/>
-  <updated>2013-05-15T22:34:44+08:00</updated>
+  <updated>2013-05-29T11:35:46+08:00</updated>
   <id>http://yangdd.github.com/</id>
   <author>
     <name><![CDATA[长老]]></name>
@@ -12,6 +12,34 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[了解自己]]></title>
+    <link href="http://yangdd.github.com/blog/2013/05/29/self/"/>
+    <updated>2013-05-29T11:04:00+08:00</updated>
+    <id>http://yangdd.github.com/blog/2013/05/29/self</id>
+    <content type="html"><![CDATA[<p>昨天健身锻炼时，看到一位猛男，漂亮的8块腹肌，才发现自己应该加强锻炼了：这一阵一直练胸背，效果明显，练着也舒服，却下意识躲避痛苦的腹肌，虽然明知道有不足。这也算一种拖延症吧。</p>
+
+<!-- more -->
+
+
+<p>由此我又想到，锻炼身体，可以很快得到直观的反馈（要不为啥健身房里全是镜子），再做针对性的调整，就可以不断进步。学习嘛，总是需要反馈才能提高（上学时的考试也是反馈哈）。</p>
+
+<p>工作了，如何了解自己，得到反馈呢？如果有个好的老板，是RP。360反馈测试也不错，但是反馈需要持续的。从个人来说，可以试试温伯格建议的每天5分钟日记，任何内容都可以，不知道写啥可以从这个模版开始：</p>
+
+<p>当天的主要行为，加上一点评论和反思</p>
+
+<p><code>没有人知道你需要学什么，和可能你自己也不知道。但这不是逃避写日记的理由。实际上，这恰恰是写日记的理由。</code></p>
+
+<p>慢慢地，你可以通过记述来感知和反思，加深对自己的认识；这有点像每天从各个不同的方向照镜子，于是慢慢能认清自己的形象。</p>
+
+<p>还有，要定期回顾一下，每周末看看本周的日记记录。</p>
+
+<p><em>简单吗？谁不会写？能不能先坚持3个月试试？一周加起来就半小时，少看点电视就有了。</em></p>
+
+<p>我想这么简单的事，还是有人坚持不下去。希望不是你。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[从记忆钉谈起]]></title>
@@ -242,100 +270,6 @@
 这种情况下,我们就说,人体的“慢性病”就产生了。 我们日常的姿势动作,如果不是顺应自然的状态,也就是说给 气血管道施加了挤迫的力量,就会造成气血运行的不正常,如果长期如此,根据条件反射原理,也就是人体的调适中枢认为你就是要这样, 它只好调节气血运行的规律以适应你这个姿势(人体不适感也会因此调整,让你错误的以为不适感已经消除),而造成长期的气血运行偏 盛偏衰现象,通道和肌体脏腑就会产生疲劳性伤害,同时因为也超过人体不适感调整的度,那么不适感无法消除,病状也就持续的产生了。</p>
 
 <p>你在看这篇文章时坐直了吗？</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[漫谈时间管理]]></title>
-    <link href="http://yangdd.github.com/blog/2012/10/31/man-tan-shi-jian-guan-li/"/>
-    <updated>2012-10-31T21:02:00+08:00</updated>
-    <id>http://yangdd.github.com/blog/2012/10/31/man-tan-shi-jian-guan-li</id>
-    <content type="html"><![CDATA[<p>自从《高效能人士的七个习惯》后，以紧急和重要做的2x2矩阵也深入人心，但是道理知道了，如何落实到实践中，谈谈我的心得如下。</p>
-
-<p>如果早上有以下4件事：</p>
-
-<!-- more -->
-
-
-<ol>
-<li>处理客户投诉</li>
-<li>出差费用报销</li>
-<li>制作项目安排PPT</li>
-<li>预约客户访问</li>
-<li>写会议记录</li>
-</ol>
-
-
-<p>可以放入矩阵如下：</p>
-
-<table class="table table-bordered table-striped table-condensed">
-   <tr>
-      <td>5</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>处理客户投诉</td>
-   </tr>
-   <tr>
-      <td>4</td>
-      <td></td>
-      <td></td>
-      <td>预约客户访问</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>3</td>
-      <td></td>
-      <td>写会议记录</td>
-      <td></td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>2</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>制作项目安排PPT</td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>1</td>
-      <td>出差费用报销</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>紧急度/重要性</td>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-   </tr>
-</table>
-
-
-<p>如果从<code>优先级=重要性x紧急度</code>考虑的话，工作顺序如下：</p>
-
-<ol>
-<li>处理客户投诉</li>
-<li>预约客户访问</li>
-<li>制作项目安排PPT</li>
-<li>写会议记录</li>
-<li>出差费用报销</li>
-</ol>
-
-
-<p>还有一种思考方法是以<code>紧急度</code>与<code>工作量</code>来考虑，又会有一种不同的安排。</p>
-
-<p>其实我也不是这么严格，有时候会根据大脑思考的模式工作，把相似的放在一起做，在疲劳时做不费脑的（出差费用报销等），或者做不同的事。比如我看书一般也是几本一起看，旅游摄影的，小说，思维模式的，软件开发的，疲劳了就换一本。</p>
-
-<p>好了，该换换了，看看邮件吧。<img src="/images/icon_smile.gif" alt="" /></p>
 ]]></content>
   </entry>
   
